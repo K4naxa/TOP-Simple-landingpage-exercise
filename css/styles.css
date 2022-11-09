@@ -1,24 +1,17 @@
 body {
-  background-color: black;
+  background-color: #1f2937;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex: 1 1 auto;
-  flex-wrap: wrap;
-  background-color: black;
 }
 
-.background {
-  background-color: #1f2937;
-  width: auto;
-  background-size: cover;
-  background-position: center;
-}
 .header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   margin: 0;
+  flex-wrap: wrap;
 }
 .header .logo {
   color: white;
@@ -34,6 +27,7 @@ a {
   padding: 80px;
   padding-top: 20px;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .first-section .text h1 {
   color: #ffff;
@@ -49,6 +43,18 @@ a {
 img {
   width: 600px;
   border-radius: 10%;
+}
+.first-section button {
+  background-color: #3b82f6;
+  color: white;
+  border: 0;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition-duration: 150ms;
+}
+button:hover {
+  background-color: darkblue;
 }
 .second-section {
   margin: 0;
@@ -101,18 +107,32 @@ img {
 }
 .fourth-section .window {
   background: #3b82f6;
+  width: 700px;
   margin: 50px 0;
   color: white;
-  border-radius: 15%;
-  padding: 15px;
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
+  perspective: 1px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fourth-section h3 {
+  margin: 0;
 }
 
 .fourth-section .window button {
   background-color: #3b82f6;
+  color: white;
   border: white 2px solid;
-  border-radius: 12%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition-duration: 150ms;
+}
+.window button:hover {
+  background-color: darkblue;
 }
 
 .footer {
