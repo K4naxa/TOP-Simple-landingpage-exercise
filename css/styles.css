@@ -11,7 +11,6 @@ body {
   justify-content: space-between;
   padding: 20px;
   margin: 0;
-  flex-wrap: wrap;
 }
 .header .logo {
   color: white;
@@ -21,10 +20,16 @@ a {
   color: #c6c9cf;
   text-decoration: none;
 }
+.header ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
 
 .first-section {
   display: flex;
-  padding: 80px;
+  padding: 80px 10px;
   padding-top: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -34,6 +39,8 @@ a {
   font-size: 70px;
   padding-top: 0;
   margin: 0;
+  margin-bottom: 30px;
+  line-height: 1;
 }
 .first-section .text {
   color: #c6c9cf;
@@ -42,7 +49,10 @@ a {
 }
 img {
   width: 600px;
-  border-radius: 10%;
+  border-radius: 15px;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 800px;
 }
 .first-section button {
   background-color: #3b82f6;
@@ -59,10 +69,12 @@ button:hover {
 .second-section {
   margin: 0;
   background-color: white;
+  padding: 15px;
 }
 .second-section h2 {
   text-align: center;
   margin: 0;
+  font-size: 30px;
 }
 
 .second-section .card-container {
@@ -130,6 +142,7 @@ button:hover {
   border-radius: 5px;
   padding: 5px 10px;
   transition-duration: 150ms;
+  margin: 15px;
 }
 .window button:hover {
   background-color: darkblue;
