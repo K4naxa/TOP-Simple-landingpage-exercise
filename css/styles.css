@@ -9,8 +9,7 @@ body {
 }
 
 .background {
-  background-image: url(../pictures/background.jpeg);
-  background-color: #cccccc;
+  background-color: #1f2937;
   width: auto;
   background-size: cover;
   background-position: center;
@@ -21,7 +20,7 @@ body {
   padding: 20px;
   margin: 0;
 }
-.logo {
+.header .logo {
   color: white;
 }
 
@@ -59,35 +58,64 @@ img {
   margin: 0;
 }
 
-.card-container {
+.second-section .card-container {
   display: flex;
   gap: 50px;
   justify-content: center;
   flex-wrap: wrap;
 }
-.card-container .card {
+.second-section .card-container .card {
   width: 350px;
   text-align: center;
+  padding: 20px;
 }
-.card img {
+.second-section .card img {
   width: 350px;
   height: 350px;
 }
 
 .third-section {
-  background-color: #112432;
+  background-color: #e5e7eb;
   padding-left: auto;
   font-size: 30px;
-  color: white;
+  color: #464f5a;
   display: flex;
   padding: 50px 0;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.quote {
-  width: 800px;
+.third-section .quote {
+  max-width: 800px;
   text-align: center;
 }
-.writer {
+.third-section .writer {
   align-self: flex-end;
   font-size: 18px;
+}
+
+.fourth-section {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+.fourth-section .window {
+  background: #3b82f6;
+  margin: 50px 0;
+  color: white;
+  border-radius: 15%;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fourth-section .window button {
+  background-color: #3b82f6;
+  border: white 2px solid;
+  border-radius: 12%;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
 }
